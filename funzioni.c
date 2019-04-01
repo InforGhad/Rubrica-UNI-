@@ -35,3 +35,13 @@ int compare(const void *e1, const void *e2) {
 
 	return 0;
 }
+
+void ricerca(rubrica R, int n, elemento e){
+	printf("Ricerca di: %s %s\n", e.cognome, e.nome);
+
+
+
+
+
+
+}

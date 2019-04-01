@@ -17,7 +17,7 @@ int main() {
 	int caso;
 	boolean scelta=FALSE;
 	do {
-		printf("1)Inserimento\n2)Stampa\n3)Uscita.");
+		printf("1)Inserimento\n2)Stampa\n3)RIcerca\n4)Uscita.");
 		printf("\nScelta: ");
 		scanf("%d", &caso);
 
@@ -29,8 +29,17 @@ int main() {
 			printf("\nSono stati inseriti: %d Elementi\n", noe);
 			break;
 		}
+
 		case 2: {
 			stampa(R, noe);
+			break;
+		}
+		case 3:{
+			elemento find;
+			printf("Chi vuoi cercare?: ");
+			scanf("%s %s", find.cognome, find.nome);
+			ricerca(R, noe, find);
+
 			break;
 		}
 		default: scelta = TRUE;

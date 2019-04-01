@@ -18,3 +18,5 @@ int inserimento(rubrica R, int n);
 int compare(const void *e1, const void *e2);
 
 void stampa(rubrica R, int dim);
+
+void ricerca(rubrica R, int n, elemento e);
