@@ -17,7 +17,7 @@ int inserimento(rubrica R, int n) {
 void stampa(rubrica R, int dim) {
 	int i;
 	for (i = 0; i < dim; i++) {
-		printf("Cognome:%s, Nome%s, Telefono:%s\n", R[i].cognome, R[i].nome, R[i].tel);
+		printf("Cognome:%s, Nome:%s, Telefono:%s\n", R[i].cognome, R[i].nome, R[i].tel);
 	}
 }
 

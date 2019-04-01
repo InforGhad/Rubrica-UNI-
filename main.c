@@ -23,7 +23,8 @@ int main() {
 
 		switch (caso)
 		{
-		case 1: {
+		case 1:
+		{
 			noe = inserimento(R, noe);
 			printf("\nSono stati inseriti: %d Elementi\n", noe);
 			break;
