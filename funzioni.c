@@ -11,8 +11,6 @@ int inserimento(rubrica R, int n) {
 	n++;
 	qsort(R, n, sizeof(elemento), compare);
 	return n;
-	
-	
 }
 
 
@@ -34,4 +32,6 @@ int compare(const void *e1, const void *e2) {
 		return cmp;
 	else
 		return strcmp(v1.nome, v2.nome);
+
+	return 0;
 }

@@ -13,16 +13,17 @@ int main() {
 		"Voorhees","Jason","555 13061946",
 		"Voorhees","Pamela","555 22081930"
 	};
+
 	int caso;
 	boolean scelta=FALSE;
 	do {
 		printf("1)Inserimento\n2)Stampa\n3)Uscita.");
 		printf("\nScelta: ");
 		scanf("%d", &caso);
+
 		switch (caso)
 		{
 		case 1: {
-			int k;
 			noe = inserimento(R, noe);
 			printf("\nSono stati inseriti: %d Elementi\n", noe);
 			break;
@@ -30,7 +31,7 @@ int main() {
 		case 2: {
 			stampa(R, noe);
 			break;
-		}			
+		}
 		default: scelta = TRUE;
 			break;
 		}
@@ -41,5 +42,5 @@ int main() {
 
 
 
-
+return 0;
 }

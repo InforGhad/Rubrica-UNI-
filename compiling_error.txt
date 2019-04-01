@@ -1,0 +1,4 @@
+/usr/bin/ld: /tmp/ccsKxIeS.o: in function `main':
+main.c:(.text+0x3e1): undefined reference to `inserimento'
+/usr/bin/ld: main.c:(.text+0x419): undefined reference to `stampa'
+collect2: error: ld returned 1 exit status
