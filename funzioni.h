@@ -19,4 +19,6 @@ int compare(const void *e1, const void *e2);
 
 void stampa(rubrica R, int dim);
 
+int ricercabin(rubrica R, int n, elemento e);
+
 void ricerca(rubrica R, int n, elemento e);

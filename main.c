@@ -13,44 +13,35 @@ int main() {
 		"Voorhees","Jason","555 13061946",
 		"Voorhees","Pamela","555 22081930"
 	};
-
 	int caso;
 	boolean scelta=FALSE;
 	do {
-		printf("1)Inserimento\n2)Stampa\n3)RIcerca\n4)Uscita.");
+		printf("1)Inserimento\n2)Stampa\n3)Ricerca\n4)Uscita.");
 		printf("\nScelta: ");
 		scanf("%d", &caso);
-
 		switch (caso)
 		{
-		case 1:
-		{
+		case 1: {
+			int k;
 			noe = inserimento(R, noe);
 			printf("\nSono stati inseriti: %d Elementi\n", noe);
 			break;
 		}
-
 		case 2: {
 			stampa(R, noe);
 			break;
 		}
-		case 3:{
-			elemento find;
-			printf("Chi vuoi cercare?: ");
-			scanf("%s %s", find.cognome, find.nome);
-			ricerca(R, noe, find);
+		case 3: {
+			elemento e;
+			printf("Inserisci elemento da cercare:");
+			scanf("%s %s", e.cognome, e.nome);
+			ricerca(R, noe, e);
 
 			break;
 		}
+
 		default: scelta = TRUE;
 			break;
 		}
 	} while (!scelta);
-
-
-
-
-
-
-return 0;
 }
